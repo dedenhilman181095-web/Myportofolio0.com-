@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<style>
+
+    body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0c0684, #ab116e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.login-container {
+  background: linear-gradient(135deg, #0c0684, #ab116e);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 350px;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form Title */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 800;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color:  #999;
+  pointer-events: none;
+  transition: 0.3s;
+  padding: 0 5px;
+}
+
+/* Animasi label */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #210468;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0c0684, #ab116e);
+}
+
+/* Signup link */
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+
+}
+
+p {
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+</style>
+
+
+<body>
+
+<div class="login-container">
+  <form class="login-form">
+    <h2>Login</h2>
+    
+    <div class="input-group">
+      <input type="text" required>
+      <label>Username</label>
+    </div>
+    
+    <div class="input-group">
+      <input type="password" required>
+      <label>Password</label>
+    </div>
+    
+    <button type="submit">Sign In</button>
+    
+    <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+  </form>
+</div>
+
+</body>
+</html>
